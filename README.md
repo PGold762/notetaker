@@ -28,7 +28,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Installation
 
-Download the files from the repo and install locally on your machine. Be sure to install NPM, inquirer, and Heroku.
+Download the files from the repo and install on heroku or another server type service. Be sure to install NPM, inquirer, and Heroku.
 
 ## Usage
 
