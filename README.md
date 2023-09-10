@@ -40,8 +40,9 @@ Screenshot of App:
 
 ## Credits
 
-* Used the following for help with shapes: [Moz](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
+* Used the following for help with Deletion: [GeeksforGeeks](https://www.geeksforgeeks.org/express-js-app-delete-function/)
 
+* Used the following for path.join: [W3Schools](https://www.w3schools.com/nodejs/met_path_join.asp)
 
 ## License
 

@@ -19,8 +19,8 @@ const writeNotesToFile = (notes) => {
 
 // GET route to render the notes page
 router.get('/notes', (req, res) => {
-  const notes = readNotesFromFile();
-  res.render('notes', { notes });
+    const notesPagePath = path.join(__dirname, '../public/notes.html');
+    res.sendFile(notesPagePath);
 });
 
 module.exports = router;
