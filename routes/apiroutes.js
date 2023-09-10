@@ -5,7 +5,7 @@ const path = require('path');
 const uuid = require('uuid');
 
 // Path to db.json file
-const dbFilePath = path.join(__dirname, '../db.json');
+const dbFilePath = path.join(__dirname, '../db/db.json');
 
 // Function to read the notes from db.json
 const readNotesFromFile = () => {
@@ -19,13 +19,13 @@ const writeNotesToFile = (notes) => {
 };
 
 // GET route to retrieve all notes
-router.get('/notes', (req, res) => {
+router.get('../public/notes', (req, res) => {
   const notes = readNotesFromFile();
   res.json(notes);
 });
 
 // POST route to add a new note
-router.post('/notes', (req, res) => {
+router.post('../public/notes', (req, res) => {
   const newNote = {
     id: uuid.v4(),
     title: req.body.title,
@@ -41,7 +41,7 @@ router.post('/notes', (req, res) => {
 });
 
 // DELETE route to delete a note by ID
-router.delete('/notes/:id', (req, res) => {
+router.delete('../public/notes/:id', (req, res) => {
   const noteIdToDelete = req.params.id;
 
   const notes = readNotesFromFile();

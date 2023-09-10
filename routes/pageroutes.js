@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Path to db.json file
-const dbFilePath = path.join(__dirname, '../db.json');
+const dbFilePath = path.join(__dirname, '../db');
 
 // Function to read the notes from db.json
 const readNotesFromFile = () => {

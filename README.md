@@ -44,6 +44,10 @@ Screenshot of App:
 
 * Used the following for path.join: [W3Schools](https://www.w3schools.com/nodejs/met_path_join.asp)
 
+* Asked ASKBCS for help with an error loading the notes.html page
+
+
+
 ## License
 
 MIT License
