@@ -7,6 +7,6 @@ const pageRouter = require('./pageroutes');
 const app = express();
 
 app.use('/apiroutes', apiRouter);
-app.use('/pageroutes', pageRouter);
+app.use('/', pageRouter);
 
 module.exports = app;
