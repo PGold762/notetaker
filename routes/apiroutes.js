@@ -19,13 +19,13 @@ const writeNotesToFile = (notes) => {
 };
 
 // GET route to retrieve all notes
-router.get('../public/notes', (req, res) => {
+router.get('/notes', (req, res) => {
   const notes = readNotesFromFile();
   res.json(notes);
 });
 
 // POST route to add a new note
-router.post('../public/notes', (req, res) => {
+router.post('/notes', (req, res) => {
   const newNote = {
     id: uuid.v4(),
     title: req.body.title,
@@ -41,7 +41,7 @@ router.post('../public/notes', (req, res) => {
 });
 
 // DELETE route to delete a note by ID
-router.delete('../public/notes/:id', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
   const noteIdToDelete = req.params.id;
 
   const notes = readNotesFromFile();
