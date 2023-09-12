@@ -46,7 +46,9 @@ Screenshot of App:
 
 * Asked ASKBCS for help with an error loading the notes.html page
 
+* Received help with errors from Instructor John
 
+* Received help with heroku from Tutor Anthony Tirpok
 
 ## License
 
